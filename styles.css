@@ -83,13 +83,31 @@ a {
 
 .card {
     width: 25%;
-    height: 200px;
+    height: 300px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    position: relative;
+    background-color: #fff;
+    display: flex;
+    text-align: center;
 }
 
+.card-img {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    mix-blend-mode: multiply;
+    flex-direction: column
+}
+
+.food-name {
+    margin-top: 1em ;
+    font: small-caps bold 20px/1 sans-serif;
+    display: flex;
+    flex-direction: column
+
+}
 
 
