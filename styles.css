@@ -51,7 +51,6 @@ a {
     align-items: center;
     overflow: hidden;
     text-align: center;
-    margin-bottom: 2em;
     transition: 1s;
 }
 
@@ -83,28 +82,54 @@ a {
     color: #000000;
 }
 
+.cards {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.card-line {
+    width: 50%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+}
+
+
 .card {
+    margin-top: 2em;
     margin-left: 2em;
-    width: 20%;
+    margin-right: 2em;
+    max-width: 20%;
+    height: 600px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-around;
     border-radius: 5px;
-    background-image: linear-gradient( to bottom, #ffffff, rgba(51, 255, 112, 0.11)  );
-    display: flex;
+    background-image: linear-gradient( to bottom, #e6e6e6, #8fc78f);
     text-align: center;
     transition: 0.2s;
 }
 
 
 .card:hover {
-    box-shadow: 4px 8px 16px rgba(51, 255, 112, 0.2);
+    box-shadow: 4px 8px 16px #339966;
 }
 
-.card img {
+.card-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-img img {
     width: 100%;
+    height: 100%;
     display: block;
 }
 
@@ -114,25 +139,40 @@ a {
     display: block;
 }
 
-.price {
-    font-size: 16px;
-    display: block;
-    margin-bottom: 12px;
-}
-
 .card-content:hover .button {
     background: #000;
 }
+
+.price {
+    font-size: 16px;
+    display: block;
+    margin: 12px;
+}
+
 
 .button {
     text-decoration: none;
     display: inline-block;
     padding: 0 12px;
-    background: #cccccc;
+    background: #339933;
     color: white;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 2em;
     transition: .3s ease-in;
     margin-bottom: 2em;
+    border-radius: 3px;
+}
+
+ .card-compound {
+    border: 1px #000000;
+}
+
+footer {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #00000028;
 }
