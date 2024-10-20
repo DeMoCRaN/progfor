@@ -112,7 +112,7 @@ a {
     flex-direction: column;
     justify-content: space-around;
     border-radius: 5px;
-    background-image: linear-gradient( to bottom, #e6e6e6, #8fc78f);
+    background-image: linear-gradient( to bottom, #e6e6e6, #99ee99);
     text-align: center;
     transition: 0.2s;
 }
