@@ -53,7 +53,7 @@ a {
     align-items: center;
     overflow: hidden;
     text-align: center;
-    transition: 1s;
+    transition: 0.7s;
 }
 
 .navpan a {
